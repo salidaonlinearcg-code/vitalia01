@@ -3,7 +3,6 @@ var wms_layers = [];
 
         var lyr_GoogleHybrid_0 = new ol.layer.Tile({
             'title': 'Google Hybrid',
-            'type':'base',
             'opacity': 1.000000,
             
             
@@ -41,7 +40,7 @@ var lyr_Lote_Proyecto_2 = new ol.layer.Vector({
                 source:jsonSource_Lote_Proyecto_2, 
                 style: style_Lote_Proyecto_2,
                 popuplayertitle: 'Lote_Proyecto',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/Lote_Proyecto_2.png" /> Lote_Proyecto'
             });
 var format_Plataforma_3 = new ol.format.GeoJSON();
@@ -56,7 +55,7 @@ var lyr_Plataforma_3 = new ol.layer.Vector({
                 source:jsonSource_Plataforma_3, 
                 style: style_Plataforma_3,
                 popuplayertitle: 'Plataforma',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/Plataforma_3.png" /> Plataforma'
             });
 var format_Limite_T1_4 = new ol.format.GeoJSON();
@@ -71,7 +70,7 @@ var lyr_Limite_T1_4 = new ol.layer.Vector({
                 source:jsonSource_Limite_T1_4, 
                 style: style_Limite_T1_4,
                 popuplayertitle: 'Limite_T1',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/Limite_T1_4.png" /> Limite_T1'
             });
 var format_Limite_T2_5 = new ol.format.GeoJSON();
@@ -86,60 +85,60 @@ var lyr_Limite_T2_5 = new ol.layer.Vector({
                 source:jsonSource_Limite_T2_5, 
                 style: style_Limite_T2_5,
                 popuplayertitle: 'Limite_T2',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/Limite_T2_5.png" /> Limite_T2'
             });
-var format_Coordenadas_T1_31_08_06_6 = new ol.format.GeoJSON();
-var features_Coordenadas_T1_31_08_06_6 = format_Coordenadas_T1_31_08_06_6.readFeatures(json_Coordenadas_T1_31_08_06_6, 
+var format_PilotesT1_6 = new ol.format.GeoJSON();
+var features_PilotesT1_6 = format_PilotesT1_6.readFeatures(json_PilotesT1_6, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Coordenadas_T1_31_08_06_6 = new ol.source.Vector({
+var jsonSource_PilotesT1_6 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Coordenadas_T1_31_08_06_6.addFeatures(features_Coordenadas_T1_31_08_06_6);
-var lyr_Coordenadas_T1_31_08_06_6 = new ol.layer.Vector({
+jsonSource_PilotesT1_6.addFeatures(features_PilotesT1_6);
+var lyr_PilotesT1_6 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Coordenadas_T1_31_08_06_6, 
-                style: style_Coordenadas_T1_31_08_06_6,
-                popuplayertitle: 'Coordenadas_T1_31_08_06',
+                source:jsonSource_PilotesT1_6, 
+                style: style_PilotesT1_6,
+                popuplayertitle: 'Pilotes T1',
                 interactive: true,
-                title: '<img src="styles/legend/Coordenadas_T1_31_08_06_6.png" /> Coordenadas_T1_31_08_06'
+                title: '<img src="styles/legend/PilotesT1_6.png" /> Pilotes T1'
             });
-var format_Coordenadas_T2_31_08_06_7 = new ol.format.GeoJSON();
-var features_Coordenadas_T2_31_08_06_7 = format_Coordenadas_T2_31_08_06_7.readFeatures(json_Coordenadas_T2_31_08_06_7, 
+var format_PilotesT2_7 = new ol.format.GeoJSON();
+var features_PilotesT2_7 = format_PilotesT2_7.readFeatures(json_PilotesT2_7, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Coordenadas_T2_31_08_06_7 = new ol.source.Vector({
+var jsonSource_PilotesT2_7 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Coordenadas_T2_31_08_06_7.addFeatures(features_Coordenadas_T2_31_08_06_7);
-var lyr_Coordenadas_T2_31_08_06_7 = new ol.layer.Vector({
+jsonSource_PilotesT2_7.addFeatures(features_PilotesT2_7);
+var lyr_PilotesT2_7 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Coordenadas_T2_31_08_06_7, 
-                style: style_Coordenadas_T2_31_08_06_7,
-                popuplayertitle: 'Coordenadas_T2_31_08_06',
+                source:jsonSource_PilotesT2_7, 
+                style: style_PilotesT2_7,
+                popuplayertitle: 'Pilotes T2',
                 interactive: true,
-                title: '<img src="styles/legend/Coordenadas_T2_31_08_06_7.png" /> Coordenadas_T2_31_08_06'
+                title: '<img src="styles/legend/PilotesT2_7.png" /> Pilotes T2'
             });
 
-lyr_GoogleHybrid_0.setVisible(true);lyr_EstacindeBombeoPlantadeTratamientoTanqueAccesorioCmaradeAccesoPitometroHidrantePilaMuestreoMacromedidoresVlvulaControlVlvulaSistemaRedMenorRedMatrizLneaLateralAduccinConduccinSectorizacinDistritoSubSectorSector_1.setVisible(true);lyr_Lote_Proyecto_2.setVisible(true);lyr_Plataforma_3.setVisible(true);lyr_Limite_T1_4.setVisible(true);lyr_Limite_T2_5.setVisible(true);lyr_Coordenadas_T1_31_08_06_6.setVisible(true);lyr_Coordenadas_T2_31_08_06_7.setVisible(true);
-var layersList = [lyr_GoogleHybrid_0,lyr_EstacindeBombeoPlantadeTratamientoTanqueAccesorioCmaradeAccesoPitometroHidrantePilaMuestreoMacromedidoresVlvulaControlVlvulaSistemaRedMenorRedMatrizLneaLateralAduccinConduccinSectorizacinDistritoSubSectorSector_1,lyr_Lote_Proyecto_2,lyr_Plataforma_3,lyr_Limite_T1_4,lyr_Limite_T2_5,lyr_Coordenadas_T1_31_08_06_6,lyr_Coordenadas_T2_31_08_06_7];
+lyr_GoogleHybrid_0.setVisible(true);lyr_EstacindeBombeoPlantadeTratamientoTanqueAccesorioCmaradeAccesoPitometroHidrantePilaMuestreoMacromedidoresVlvulaControlVlvulaSistemaRedMenorRedMatrizLneaLateralAduccinConduccinSectorizacinDistritoSubSectorSector_1.setVisible(true);lyr_Lote_Proyecto_2.setVisible(true);lyr_Plataforma_3.setVisible(true);lyr_Limite_T1_4.setVisible(true);lyr_Limite_T2_5.setVisible(true);lyr_PilotesT1_6.setVisible(true);lyr_PilotesT2_7.setVisible(true);
+var layersList = [lyr_GoogleHybrid_0,lyr_EstacindeBombeoPlantadeTratamientoTanqueAccesorioCmaradeAccesoPitometroHidrantePilaMuestreoMacromedidoresVlvulaControlVlvulaSistemaRedMenorRedMatrizLneaLateralAduccinConduccinSectorizacinDistritoSubSectorSector_1,lyr_Lote_Proyecto_2,lyr_Plataforma_3,lyr_Limite_T1_4,lyr_Limite_T2_5,lyr_PilotesT1_6,lyr_PilotesT2_7];
 lyr_Lote_Proyecto_2.set('fieldAliases', {'LOTCODIGO': 'LOTCODIGO', 'LOTDISPERS': 'LOTDISPERS', 'LOTILDISPE': 'LOTILDISPE', 'LOTUPREDIA': 'LOTUPREDIA', 'MANZCODIGO': 'MANZCODIGO', 'LOTDISTRIT': 'LOTDISTRIT', 'SHAPE_AREA': 'SHAPE_AREA', 'SHAPE_LEN': 'SHAPE_LEN', });
 lyr_Plataforma_3.set('fieldAliases', {'fid': 'fid', 'handle': 'handle', 'block': 'block', 'etype': 'etype', 'space': 'space', 'layer': 'layer', 'olinetype': 'olinetype', 'linetype': 'linetype', 'color': 'color', 'ocolor': 'ocolor', 'color24': 'color24', 'transparen': 'transparen', 'lweight': 'lweight', 'linewidth': 'linewidth', 'ltscale': 'ltscale', 'visible': 'visible', 'thickness': 'thickness', 'ext': 'ext', 'width': 'width', });
 lyr_Limite_T1_4.set('fieldAliases', {'fid': 'fid', 'handle': 'handle', 'block': 'block', 'etype': 'etype', 'space': 'space', 'layer': 'layer', 'olinetype': 'olinetype', 'linetype': 'linetype', 'color': 'color', 'ocolor': 'ocolor', 'color24': 'color24', 'transparen': 'transparen', 'lweight': 'lweight', 'linewidth': 'linewidth', 'ltscale': 'ltscale', 'visible': 'visible', 'width': 'width', 'thickness': 'thickness', 'ext': 'ext', });
 lyr_Limite_T2_5.set('fieldAliases', {'fid': 'fid', 'handle': 'handle', 'block': 'block', 'etype': 'etype', 'space': 'space', 'layer': 'layer', 'olinetype': 'olinetype', 'linetype': 'linetype', 'color': 'color', 'ocolor': 'ocolor', 'color24': 'color24', 'transparen': 'transparen', 'lweight': 'lweight', 'linewidth': 'linewidth', 'ltscale': 'ltscale', 'visible': 'visible', 'width': 'width', 'thickness': 'thickness', 'ext': 'ext', });
-lyr_Coordenadas_T1_31_08_06_6.set('fieldAliases', {'id': 'id', 'x_plano': 'x_plano', 'y_plano': 'y_plano', 'torre': 'torre', 'replanteado': 'replanteado', 'x_campo': 'x_campo', 'y_campo': 'y_campo', 'desviacion radial': 'desviacion radial', 'volTeorico': 'volTeorico', 'volFinal': 'volFinal', 'FechaFundido': 'FechaFundido', 'FechaReplanteo': 'FechaReplanteo', });
-lyr_Coordenadas_T2_31_08_06_7.set('fieldAliases', {'id': 'id', 'x_plano': 'x_plano', 'y_plano': 'y_plano', 'torre': 'torre', 'replanteado': 'replanteado', 'x_campo': 'x_campo', 'y_campo': 'y_campo', 'desviacion radial': 'desviacion radial', 'volTeorico': 'volTeorico', 'volFinal': 'volFinal', 'FechaFundido': 'FechaFundido', 'FechaReplanteo': 'FechaReplanteo', });
+lyr_PilotesT1_6.set('fieldAliases', {'id': 'id', 'x_plano': 'x_plano', 'y_plano': 'y_plano', 'torre': 'torre', 'replanteado': 'replanteado', 'x_campo': 'x_campo', 'y_campo': 'y_campo', 'desviacion radial': 'desviacion radial', 'volTeorico': 'volTeorico', 'volFinal': 'volFinal', 'FechaFundido': 'FechaFundido', 'FechaReplanteo': 'FechaReplanteo', });
+lyr_PilotesT2_7.set('fieldAliases', {'id': 'id', 'x_plano': 'x_plano', 'y_plano': 'y_plano', 'torre': 'torre', 'replanteado': 'replanteado', 'x_campo': 'x_campo', 'y_campo': 'y_campo', 'desviacion radial': 'desviacion radial', 'volTeorico': 'volTeorico', 'volFinal': 'volFinal', 'FechaFundido': 'FechaFundido', 'FechaReplanteo': 'FechaReplanteo', });
 lyr_Lote_Proyecto_2.set('fieldImages', {'LOTCODIGO': 'TextEdit', 'LOTDISPERS': 'TextEdit', 'LOTILDISPE': 'TextEdit', 'LOTUPREDIA': 'TextEdit', 'MANZCODIGO': 'TextEdit', 'LOTDISTRIT': 'TextEdit', 'SHAPE_AREA': 'TextEdit', 'SHAPE_LEN': 'TextEdit', });
 lyr_Plataforma_3.set('fieldImages', {'fid': 'TextEdit', 'handle': 'TextEdit', 'block': 'TextEdit', 'etype': 'TextEdit', 'space': 'TextEdit', 'layer': 'TextEdit', 'olinetype': 'TextEdit', 'linetype': 'TextEdit', 'color': 'TextEdit', 'ocolor': 'TextEdit', 'color24': 'TextEdit', 'transparen': 'TextEdit', 'lweight': 'TextEdit', 'linewidth': 'TextEdit', 'ltscale': 'TextEdit', 'visible': 'TextEdit', 'thickness': 'TextEdit', 'ext': 'TextEdit', 'width': 'TextEdit', });
 lyr_Limite_T1_4.set('fieldImages', {'fid': 'TextEdit', 'handle': 'TextEdit', 'block': 'TextEdit', 'etype': 'TextEdit', 'space': 'TextEdit', 'layer': 'TextEdit', 'olinetype': 'TextEdit', 'linetype': 'TextEdit', 'color': 'TextEdit', 'ocolor': 'TextEdit', 'color24': 'TextEdit', 'transparen': 'TextEdit', 'lweight': 'TextEdit', 'linewidth': 'TextEdit', 'ltscale': 'TextEdit', 'visible': 'TextEdit', 'width': 'TextEdit', 'thickness': 'TextEdit', 'ext': 'TextEdit', });
 lyr_Limite_T2_5.set('fieldImages', {'fid': 'TextEdit', 'handle': 'TextEdit', 'block': 'TextEdit', 'etype': 'TextEdit', 'space': 'TextEdit', 'layer': 'TextEdit', 'olinetype': 'TextEdit', 'linetype': 'TextEdit', 'color': 'TextEdit', 'ocolor': 'TextEdit', 'color24': 'TextEdit', 'transparen': 'TextEdit', 'lweight': 'TextEdit', 'linewidth': 'TextEdit', 'ltscale': 'TextEdit', 'visible': 'TextEdit', 'width': 'TextEdit', 'thickness': 'TextEdit', 'ext': 'TextEdit', });
-lyr_Coordenadas_T1_31_08_06_6.set('fieldImages', {'id': 'TextEdit', 'x_plano': 'TextEdit', 'y_plano': 'TextEdit', 'torre': 'TextEdit', 'replanteado': 'TextEdit', 'x_campo': 'TextEdit', 'y_campo': 'TextEdit', 'desviacion radial': 'TextEdit', 'volTeorico': 'TextEdit', 'volFinal': 'TextEdit', 'FechaFundido': 'TextEdit', 'FechaReplanteo': 'TextEdit', });
-lyr_Coordenadas_T2_31_08_06_7.set('fieldImages', {'id': 'TextEdit', 'x_plano': 'TextEdit', 'y_plano': 'TextEdit', 'torre': 'TextEdit', 'replanteado': 'TextEdit', 'x_campo': 'TextEdit', 'y_campo': 'TextEdit', 'desviacion radial': 'TextEdit', 'volTeorico': 'TextEdit', 'volFinal': 'TextEdit', 'FechaFundido': 'TextEdit', 'FechaReplanteo': 'TextEdit', });
+lyr_PilotesT1_6.set('fieldImages', {'id': 'TextEdit', 'x_plano': 'TextEdit', 'y_plano': 'TextEdit', 'torre': 'TextEdit', 'replanteado': 'TextEdit', 'x_campo': 'TextEdit', 'y_campo': 'TextEdit', 'desviacion radial': 'TextEdit', 'volTeorico': 'TextEdit', 'volFinal': 'TextEdit', 'FechaFundido': 'TextEdit', 'FechaReplanteo': 'TextEdit', });
+lyr_PilotesT2_7.set('fieldImages', {'id': 'TextEdit', 'x_plano': 'TextEdit', 'y_plano': 'TextEdit', 'torre': 'TextEdit', 'replanteado': 'TextEdit', 'x_campo': 'TextEdit', 'y_campo': 'TextEdit', 'desviacion radial': 'TextEdit', 'volTeorico': 'TextEdit', 'volFinal': 'TextEdit', 'FechaFundido': 'TextEdit', 'FechaReplanteo': 'TextEdit', });
 lyr_Lote_Proyecto_2.set('fieldLabels', {'LOTCODIGO': 'no label', 'LOTDISPERS': 'no label', 'LOTILDISPE': 'no label', 'LOTUPREDIA': 'no label', 'MANZCODIGO': 'no label', 'LOTDISTRIT': 'no label', 'SHAPE_AREA': 'no label', 'SHAPE_LEN': 'no label', });
 lyr_Plataforma_3.set('fieldLabels', {'fid': 'no label', 'handle': 'no label', 'block': 'no label', 'etype': 'no label', 'space': 'no label', 'layer': 'no label', 'olinetype': 'no label', 'linetype': 'no label', 'color': 'no label', 'ocolor': 'no label', 'color24': 'no label', 'transparen': 'no label', 'lweight': 'no label', 'linewidth': 'no label', 'ltscale': 'no label', 'visible': 'no label', 'thickness': 'no label', 'ext': 'no label', 'width': 'no label', });
 lyr_Limite_T1_4.set('fieldLabels', {'fid': 'no label', 'handle': 'no label', 'block': 'no label', 'etype': 'no label', 'space': 'no label', 'layer': 'no label', 'olinetype': 'no label', 'linetype': 'no label', 'color': 'no label', 'ocolor': 'no label', 'color24': 'no label', 'transparen': 'no label', 'lweight': 'no label', 'linewidth': 'no label', 'ltscale': 'no label', 'visible': 'no label', 'width': 'no label', 'thickness': 'no label', 'ext': 'no label', });
 lyr_Limite_T2_5.set('fieldLabels', {'fid': 'no label', 'handle': 'no label', 'block': 'no label', 'etype': 'no label', 'space': 'no label', 'layer': 'no label', 'olinetype': 'no label', 'linetype': 'no label', 'color': 'no label', 'ocolor': 'no label', 'color24': 'no label', 'transparen': 'no label', 'lweight': 'no label', 'linewidth': 'no label', 'ltscale': 'no label', 'visible': 'no label', 'width': 'no label', 'thickness': 'no label', 'ext': 'no label', });
-lyr_Coordenadas_T1_31_08_06_6.set('fieldLabels', {'id': 'hidden field', 'x_plano': 'header label - always visible', 'y_plano': 'header label - always visible', 'torre': 'header label - always visible', 'replanteado': 'header label - always visible', 'x_campo': 'header label - always visible', 'y_campo': 'header label - always visible', 'desviacion radial': 'header label - always visible', 'volTeorico': 'header label - always visible', 'volFinal': 'header label - always visible', 'FechaFundido': 'header label - always visible', 'FechaReplanteo': 'header label - always visible', });
-lyr_Coordenadas_T2_31_08_06_7.set('fieldLabels', {'id': 'header label - always visible', 'x_plano': 'header label - always visible', 'y_plano': 'header label - always visible', 'torre': 'header label - always visible', 'replanteado': 'header label - always visible', 'x_campo': 'no label', 'y_campo': 'no label', 'desviacion radial': 'header label - visible with data', 'volTeorico': 'header label - visible with data', 'volFinal': 'header label - visible with data', 'FechaFundido': 'header label - visible with data', 'FechaReplanteo': 'header label - visible with data', });
-lyr_Coordenadas_T2_31_08_06_7.on('precompose', function(evt) {
+lyr_PilotesT1_6.set('fieldLabels', {'id': 'header label - always visible', 'x_plano': 'header label - always visible', 'y_plano': 'header label - always visible', 'torre': 'header label - always visible', 'replanteado': 'header label - always visible', 'x_campo': 'header label - always visible', 'y_campo': 'header label - always visible', 'desviacion radial': 'header label - always visible', 'volTeorico': 'header label - always visible', 'volFinal': 'header label - always visible', 'FechaFundido': 'header label - always visible', 'FechaReplanteo': 'header label - always visible', });
+lyr_PilotesT2_7.set('fieldLabels', {'id': 'header label - always visible', 'x_plano': 'header label - always visible', 'y_plano': 'header label - always visible', 'torre': 'header label - always visible', 'replanteado': 'header label - always visible', 'x_campo': 'no label', 'y_campo': 'no label', 'desviacion radial': 'header label - visible with data', 'volTeorico': 'header label - visible with data', 'volFinal': 'header label - visible with data', 'FechaFundido': 'header label - visible with data', 'FechaReplanteo': 'header label - visible with data', });
+lyr_PilotesT2_7.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
